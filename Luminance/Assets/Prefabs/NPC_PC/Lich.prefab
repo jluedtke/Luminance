@@ -362,7 +362,7 @@ GameObject:
   m_Layer: 11
   m_Name: Lich
   m_TagString: Enemy
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: 3936346786652291628, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -657,8 +657,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1693738781719722}
-  m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
-  m_LocalPosition: {x: 7.6248283, y: -1.9, z: 96.736206}
+  m_LocalRotation: {x: -0, y: 1, z: -0, w: 0}
+  m_LocalPosition: {x: -62.79432, y: -10.56249, z: -34.014374}
   m_LocalScale: {x: 0.7, y: 0.7, z: 0.7}
   m_Children:
   - {fileID: 4195523333142060}
@@ -976,13 +976,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f0609ef07ed421a4ba481949ddb3a638, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHp: 75
+  maxHp: 50
   currentHp: 0
   dmgRes: 0
-  deathAnim: {fileID: 1055540388441250, guid: 580bd4d6d4d618b499790984574be18c, type: 2}
+  deathAnim: {fileID: 1686263273778738, guid: 6161c592c6d4b7043ab8515198067cca, type: 2}
   anim: {fileID: 95101909069604130}
-  minLumen: 5
-  maxLumen: 10
+  minLumen: 8
+  maxLumen: 12
 --- !u!114 &114626771297688552
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -995,14 +995,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 0}
-  bulletPrefab: {fileID: 1947302748600636, guid: fd0f46053c6b17247a524daa0d6215be,
+  bulletPrefab: {fileID: 1967908224334288, guid: 3e29b1f99a7aab348a91ec15c4f9df8c,
     type: 2}
   partToRotate: {fileID: 1693738781719722}
   pointToShoot: {fileID: 4091976710101268}
-  flare: {fileID: 1550338171454222, guid: a78474cab2785f645a208130ab3dc693, type: 2}
+  flare: {fileID: 1473596685326066, guid: 81557210e545ea14cbc5f1725be8227d, type: 2}
   range: 100
   speed: 30
-  fireDelta: 0.1
+  fireDelta: 0.2
   anim: {fileID: 95101909069604130}
   animationPlaying: 0
 --- !u!114 &114970321609895976

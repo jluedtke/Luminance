@@ -58,6 +58,7 @@ public class EnemyStats : MonoBehaviour {
                     alreadyDead = true;
 
                     anim.SetBool("isDead", true);
+                    Instantiate(deathAnim, transform.position + Vector3.up, transform.rotation);
                     GetComponent<CreateLumens>().ObjectDied(minLumen, maxLumen);
                     Destroy(gameObject, 1.5f);
 
