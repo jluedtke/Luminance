@@ -3490,7 +3490,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4011970338992984, guid: 683fa5e25767d6e44bf1662ded3abd9e, type: 2}
       propertyPath: m_RootOrder
-      value: 8
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 683fa5e25767d6e44bf1662ded3abd9e, type: 2}
@@ -4092,34 +4092,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: -20, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!1 &1309396535
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 1309396536}
-  m_Layer: 0
-  m_Name: GameObject
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1309396536
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1309396535}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -6.3183904, y: 6.3477592, z: -21.414875}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 7
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1323206965
 GameObject:
   m_ObjectHideFlags: 0
@@ -6235,7 +6207,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shapes:
-  - {fileID: 1668003871397512, guid: 029bc5160ba414241a38d62ee2144cd2, type: 2}
+  - {fileID: 1386358454529218, guid: 029bc5160ba414241a38d62ee2144cd2, type: 2}
   - {fileID: 1670913289947070, guid: 038fb1ea4b88eef4691c93883d4c4a4a, type: 2}
   - {fileID: 1357546320224912, guid: 1148eda8ed30ad341b1c429f5d44fbd4, type: 2}
   - {fileID: 1015047599409542, guid: 2d1aee2818ef8fc4db92b71f431ce418, type: 2}
@@ -6246,8 +6218,9 @@ MonoBehaviour:
   - {fileID: 1692133006279458, guid: 4a111e5b4fd3b704ca555e9a70a9b7d5, type: 2}
   - {fileID: 1157695022901882, guid: 64b8d7fa833e20a4995120e5a8663533, type: 2}
   - {fileID: 1540159718382474, guid: 150e363822ff33d4a85eabd609cc46a2, type: 2}
-  minimumMazePercentage: 0.99
-  roomSize: 35.08
+  deadEnd: {fileID: 1240430098749610, guid: c58b821fccb03884083c0b03b10d0483, type: 2}
+  minimumMazePercentage: 0.8
+  roomSize: 37.5
 --- !u!4 &1805894766
 Transform:
   m_ObjectHideFlags: 0

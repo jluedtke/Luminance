@@ -13,18 +13,16 @@ public class MapGenerator : MonoBehaviour {
 	private string[] boxCharacterLeftFriends;
 	private string[] boxCharacterRightFriends;
 
-
 	// Use this for initialization
 	void Awake () {
 		InitializeBoxCharacters ();
 	}
 	
 	// Update is called once per frame
-	void Update () {
-	
-	}
+	void Start () {
+    }
 
-	public void DisplayMap() {
+    public void DisplayMap() {
 		string output = "";
 		for (int r = 0; r < mapRows; r++) {
 			for (int c = 0; c < mapColumns; c++) {

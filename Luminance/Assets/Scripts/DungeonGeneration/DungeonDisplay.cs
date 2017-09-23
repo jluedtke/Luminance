@@ -3,6 +3,7 @@ using System.Collections;
 
 public class DungeonDisplay : MonoBehaviour {
 	public GameObject[] shapes;
+    public GameObject deadEnd;
 	private MapGenerator mapGenerator;
 	public float minimumMazePercentage = 0.8f;
 
@@ -33,7 +34,12 @@ public class DungeonDisplay : MonoBehaviour {
 				string ch = mapGenerator.map [r, c].ToString();
 				int charPos = mapGenerator.boxCharacters.IndexOf (ch);
 
-				if (charPos < 0 || !visitedCells[r,c]) {
+				if (ch == "O")
+                {
+                    Instantiate(deadEnd, new Vector3(r * roomSize, 0, c * roomSize), deadEnd.transform.rotation);
+                    continue;
+                }
+                else if (charPos < 0 || !visitedCells[r,c]) {
 					continue;
 				}
 
