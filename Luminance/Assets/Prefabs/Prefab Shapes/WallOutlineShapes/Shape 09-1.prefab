@@ -22,12 +22,12 @@ GameObject:
   - component: {fileID: 33547417702927764}
   - component: {fileID: 23710428944566232}
   - component: {fileID: 64669889745965014}
-  m_Layer: 0
+  m_Layer: 14
   m_Name: Pillar_A
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &1066889728718988
 GameObject:
@@ -40,12 +40,12 @@ GameObject:
   - component: {fileID: 33971759832391474}
   - component: {fileID: 23681630475192132}
   - component: {fileID: 64307606763282748}
-  m_Layer: 0
+  m_Layer: 14
   m_Name: Pillar_A
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &1149196674460320
 GameObject:
@@ -58,12 +58,12 @@ GameObject:
   - component: {fileID: 33144405960837932}
   - component: {fileID: 64275336252761518}
   - component: {fileID: 23605829761523848}
-  m_Layer: 0
+  m_Layer: 14
   m_Name: GroundPlane (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &1157695022901882
 GameObject:
@@ -73,12 +73,12 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4399576004830472}
-  m_Layer: 0
+  m_Layer: 14
   m_Name: Shape 09-1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &1224230511957034
 GameObject:
@@ -91,12 +91,12 @@ GameObject:
   - component: {fileID: 33373089011323544}
   - component: {fileID: 64972851685347330}
   - component: {fileID: 23916793953367310}
-  m_Layer: 0
+  m_Layer: 14
   m_Name: GroundPlane
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &1224918715944900
 GameObject:
@@ -109,12 +109,12 @@ GameObject:
   - component: {fileID: 33105933122529030}
   - component: {fileID: 64772371612620388}
   - component: {fileID: 23573360388459060}
-  m_Layer: 0
+  m_Layer: 14
   m_Name: GroundPlane (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &1232114687461470
 GameObject:
@@ -124,12 +124,12 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4120059845807184}
-  m_Layer: 0
+  m_Layer: 14
   m_Name: Ground
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &1260482632620216
 GameObject:
@@ -142,12 +142,12 @@ GameObject:
   - component: {fileID: 33754114809413438}
   - component: {fileID: 23675623011076758}
   - component: {fileID: 64206058270747986}
-  m_Layer: 0
+  m_Layer: 14
   m_Name: Wall_A (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &1328355954905322
 GameObject:
@@ -157,12 +157,12 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4919595236751218}
-  m_Layer: 0
+  m_Layer: 14
   m_Name: Walls
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &1432943426747094
 GameObject:
@@ -175,12 +175,12 @@ GameObject:
   - component: {fileID: 33699250074068842}
   - component: {fileID: 23269082761764076}
   - component: {fileID: 64912422705647952}
-  m_Layer: 0
+  m_Layer: 14
   m_Name: Wall_A (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &1465086352204572
 GameObject:
@@ -190,12 +190,12 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4835639639589972}
-  m_Layer: 0
+  m_Layer: 14
   m_Name: Props
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &1495059648553704
 GameObject:
@@ -208,12 +208,12 @@ GameObject:
   - component: {fileID: 33152771269472744}
   - component: {fileID: 23269137677479912}
   - component: {fileID: 64741046802907386}
-  m_Layer: 0
+  m_Layer: 14
   m_Name: Wall_A (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &1559243730192564
 GameObject:
@@ -226,12 +226,12 @@ GameObject:
   - component: {fileID: 33807111411328368}
   - component: {fileID: 23475398715903510}
   - component: {fileID: 64596492171762768}
-  m_Layer: 0
+  m_Layer: 14
   m_Name: Wall_A (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &1646971809602452
 GameObject:
@@ -244,12 +244,12 @@ GameObject:
   - component: {fileID: 33485310885684040}
   - component: {fileID: 64007561658465386}
   - component: {fileID: 23549194718045530}
-  m_Layer: 0
+  m_Layer: 14
   m_Name: GroundPlane (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &1725422779159172
 GameObject:
@@ -262,12 +262,12 @@ GameObject:
   - component: {fileID: 33135048476318676}
   - component: {fileID: 23164826510959026}
   - component: {fileID: 64277260923482656}
-  m_Layer: 0
+  m_Layer: 14
   m_Name: Wall_A (8)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &1755470030091154
 GameObject:
@@ -280,12 +280,12 @@ GameObject:
   - component: {fileID: 33599559982693016}
   - component: {fileID: 23290210041054166}
   - component: {fileID: 64059767551813866}
-  m_Layer: 0
+  m_Layer: 14
   m_Name: Wall_A (8)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &1832241685064302
 GameObject:
@@ -298,12 +298,12 @@ GameObject:
   - component: {fileID: 33450635914068118}
   - component: {fileID: 23353407580265562}
   - component: {fileID: 64698007467618552}
-  m_Layer: 0
+  m_Layer: 14
   m_Name: Pillar_A (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &1857675049254336
 GameObject:
@@ -316,12 +316,12 @@ GameObject:
   - component: {fileID: 33169485592144054}
   - component: {fileID: 23861033699262182}
   - component: {fileID: 64156395063584138}
-  m_Layer: 0
+  m_Layer: 14
   m_Name: Pillar_A (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &1866851430677394
 GameObject:
@@ -334,12 +334,12 @@ GameObject:
   - component: {fileID: 33818074105703368}
   - component: {fileID: 23914117409088614}
   - component: {fileID: 64100646310950802}
-  m_Layer: 0
+  m_Layer: 14
   m_Name: Wall_A (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &4011084318601776
 Transform:

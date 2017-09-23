@@ -1,11 +1,12 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.AI;
 
 public class PlayerMovement : MonoBehaviour {
 
     public float speed;
-    private Rigidbody rb;
+    private NavMeshAgent nva;
     private Vector3 moveInput;
     private Vector3 moveVelocity;
     private Camera mainCamera;
@@ -14,7 +15,7 @@ public class PlayerMovement : MonoBehaviour {
     private void Start()
     {
         mainCamera = FindObjectOfType<Camera>();
-        rb = GetComponent<Rigidbody>();
+        nva = GetComponent<NavMeshAgent>();
     }
 
     // Update is called once per frame
@@ -40,6 +41,6 @@ public class PlayerMovement : MonoBehaviour {
 
     private void FixedUpdate()
     {
-        rb.velocity = moveVelocity;
+        nva.velocity = moveVelocity;
     }
 }

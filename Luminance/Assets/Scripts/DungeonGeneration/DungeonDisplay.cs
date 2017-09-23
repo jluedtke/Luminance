@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.AI;
 
 public class DungeonDisplay : MonoBehaviour {
 	public GameObject[] shapes;
@@ -46,9 +47,14 @@ public class DungeonDisplay : MonoBehaviour {
 				Instantiate (shapes [charPos], new Vector3 (r * roomSize, 0, c * roomSize), shapes[charPos].transform.rotation);
 			}
 		}
+
+
+        //NavMesh Stuff
+        gameObject.GetComponent<NavMeshSurface>().BuildNavMesh();
 	}
 
-	private int GetVisitedCellsCount(bool[,] visitedCells) {
+
+    private int GetVisitedCellsCount(bool[,] visitedCells) {
 		int visitedCellsCount = 0;
 
 		for (int r = 1; r < mapGenerator.mapRows - 1; r++) {
