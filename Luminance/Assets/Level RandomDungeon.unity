@@ -3507,6 +3507,22 @@ Prefab:
       propertyPath: m_Height
       value: 10
       objectReference: {fileID: 0}
+    - target: {fileID: 4658464042795064, guid: 683fa5e25767d6e44bf1662ded3abd9e, type: 2}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4813181380204820, guid: 683fa5e25767d6e44bf1662ded3abd9e, type: 2}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4926529051388650, guid: 683fa5e25767d6e44bf1662ded3abd9e, type: 2}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4570108770657286, guid: 683fa5e25767d6e44bf1662ded3abd9e, type: 2}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 683fa5e25767d6e44bf1662ded3abd9e, type: 2}
   m_IsPrefabParent: 0
@@ -3637,7 +3653,9 @@ MonoBehaviour:
   environmentLayer:
     serializedVersion: 2
     m_Bits: 16384
-  target: {fileID: 1175546496}
+  target: {fileID: 1218661490}
+  transparentMat: {fileID: 2100000, guid: 2a45119b6529db041a79e08b385c40de, type: 2}
+  opaqueMat: {fileID: 2100000, guid: ca80be68b2f27f240bffdf0cd63f386e, type: 2}
 --- !u!1 &1202794519
 GameObject:
   m_ObjectHideFlags: 0
@@ -3731,6 +3749,31 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1202794519}
+--- !u!1 &1218661489 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1461859214844212, guid: 683fa5e25767d6e44bf1662ded3abd9e,
+    type: 2}
+  m_PrefabInternal: {fileID: 1175546495}
+--- !u!4 &1218661490 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 4813181380204820, guid: 683fa5e25767d6e44bf1662ded3abd9e,
+    type: 2}
+  m_PrefabInternal: {fileID: 1175546495}
+--- !u!114 &1218661491
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1218661489}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a28f2b528fb34fc42a46c336f36be66a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  environmentLayer:
+    serializedVersion: 2
+    m_Bits: 16384
+  opaqueMat: {fileID: 2100000, guid: ca80be68b2f27f240bffdf0cd63f386e, type: 2}
 --- !u!1 &1226796458
 GameObject:
   m_ObjectHideFlags: 0

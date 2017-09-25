@@ -1,5 +1,5 @@
 ﻿using UnityEngine;
-using System.Collections;
+using System.Collections.Generic;
 
 
 public class ClearSight : MonoBehaviour
@@ -8,39 +8,62 @@ public class ClearSight : MonoBehaviour
     public LayerMask environmentLayer;
     public Transform target;
 
-    private Ray ray;
+    [Header("Materials")]
+    public Material transparentMat;
+    public Material opaqueMat;
+
+    private float fireDelta = 2F; //fire rate
+
+    private float nextFire = 2F; //after first shot
+    private float myTime = 0.0F;
+
+    private List<GameObject> transparentWalls = new List<GameObject>();
+
 
     void Update()
     {
-        ray = Camera.main.ScreenPointToRay(target.position);
-
-        RaycastHit[] hits;
-        hits = Physics.RaycastAll(ray, distanceToPlayer, environmentLayer);
-        foreach (RaycastHit hit in hits)
+        myTime = myTime + Time.deltaTime;
+        RaycastHit hit;
+        MeshRenderer objectMesh;
+        if (Physics.Linecast(transform.position, target.position, out hit, environmentLayer))
         {
-            print("Found 1");
-            MeshRenderer rend = hit.collider.GetComponent<MeshRenderer>();
-            if (rend == null)
-                continue; // no renderer attached? go to next hit
-                          // TODO: maybe implement here a check for GOs that should not be affected like the player
+            objectMesh = hit.collider.GetComponent<MeshRenderer>();
+            transparentWalls.Add(hit.collider.gameObject);
 
-
-            if (rend)
-            {
-                // Change the material of all hit colliders
-                // to use a transparent shader.
-                rend.material.shader = Shader.Find("Transparent/Diffuse");
-                Color tempColor = rend.material.color;
-                tempColor.a = 0.3F;
-                rend.material.color = tempColor;
-            }
+            objectMesh.material = transparentMat;
+            Color objectColor = objectMesh.material.color;
+            objectColor.a = 0.8f;
+            objectMesh.material.color = objectColor;
         }
+
+        if (myTime > nextFire)
+        {
+            nextFire = myTime + fireDelta;
+
+            ChangeToOpaque();
+
+            nextFire = nextFire - myTime;
+            myTime = 0.0F;
+        }
+
+    }
+
+    private void ChangeToOpaque()
+    {
+        if (transparentWalls.Count <= 0)
+            return;
+
+        for (int i = 0; i < transparentWalls.Count; i++)
+        {
+            transparentWalls[i].GetComponent<MeshRenderer>().material = opaqueMat;
+        }
+        transparentWalls = new List<GameObject>();
     }
 
     private void OnDrawGizmos()
     {
         Gizmos.color = Color.green;
-        Gizmos.DrawRay(ray);
+        Gizmos.DrawLine(transform.position, target.position);
     }
 
 }
