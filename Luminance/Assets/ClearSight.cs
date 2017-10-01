@@ -18,6 +18,7 @@ public class ClearSight : MonoBehaviour
     private float myTime = 0.0F;
 
     private List<GameObject> transparentWalls = new List<GameObject>();
+    private GameObject currentWall;
 
 
     void Update()
@@ -28,8 +29,11 @@ public class ClearSight : MonoBehaviour
         if (Physics.Linecast(transform.position, target.position, out hit, environmentLayer))
         {
             objectMesh = hit.collider.GetComponent<MeshRenderer>();
-            transparentWalls.Add(hit.collider.gameObject);
 
+            if (!transparentWalls.Contains(hit.collider.gameObject))
+                transparentWalls.Add(hit.collider.gameObject);
+
+            currentWall = hit.collider.gameObject; 
             objectMesh.material = transparentMat;
             Color objectColor = objectMesh.material.color;
             objectColor.a = 0.8f;
@@ -53,11 +57,18 @@ public class ClearSight : MonoBehaviour
         if (transparentWalls.Count <= 0)
             return;
 
+
+
         for (int i = 0; i < transparentWalls.Count; i++)
         {
+            if (transparentWalls[i] == currentWall)
+                continue;
+
             transparentWalls[i].GetComponent<MeshRenderer>().material = opaqueMat;
         }
         transparentWalls = new List<GameObject>();
+
+
     }
 
     private void OnDrawGizmos()
