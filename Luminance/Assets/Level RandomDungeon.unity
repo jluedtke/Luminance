@@ -3492,37 +3492,6 @@ Prefab:
       propertyPath: m_RootOrder
       value: 7
       objectReference: {fileID: 0}
-    - target: {fileID: 195822952999711038, guid: 683fa5e25767d6e44bf1662ded3abd9e,
-        type: 2}
-      propertyPath: m_StoppingDistance
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 195822952999711038, guid: 683fa5e25767d6e44bf1662ded3abd9e,
-        type: 2}
-      propertyPath: m_Radius
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 195822952999711038, guid: 683fa5e25767d6e44bf1662ded3abd9e,
-        type: 2}
-      propertyPath: m_Height
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 4658464042795064, guid: 683fa5e25767d6e44bf1662ded3abd9e, type: 2}
-      propertyPath: m_RootOrder
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4813181380204820, guid: 683fa5e25767d6e44bf1662ded3abd9e, type: 2}
-      propertyPath: m_RootOrder
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4926529051388650, guid: 683fa5e25767d6e44bf1662ded3abd9e, type: 2}
-      propertyPath: m_RootOrder
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 4570108770657286, guid: 683fa5e25767d6e44bf1662ded3abd9e, type: 2}
-      propertyPath: m_RootOrder
-      value: 3
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 683fa5e25767d6e44bf1662ded3abd9e, type: 2}
   m_IsPrefabParent: 0
@@ -3654,8 +3623,8 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 16384
   target: {fileID: 1218661490}
-  transparentMat: {fileID: 2100000, guid: 2a45119b6529db041a79e08b385c40de, type: 2}
-  opaqueMat: {fileID: 2100000, guid: ca80be68b2f27f240bffdf0cd63f386e, type: 2}
+  transparentMat: {fileID: 2100000, guid: ca80be68b2f27f240bffdf0cd63f386e, type: 2}
+  opaqueMat: {fileID: 2100000, guid: 2a45119b6529db041a79e08b385c40de, type: 2}
 --- !u!1 &1202794519
 GameObject:
   m_ObjectHideFlags: 0
@@ -3749,31 +3718,11 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1202794519}
---- !u!1 &1218661489 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 1461859214844212, guid: 683fa5e25767d6e44bf1662ded3abd9e,
-    type: 2}
-  m_PrefabInternal: {fileID: 1175546495}
 --- !u!4 &1218661490 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4813181380204820, guid: 683fa5e25767d6e44bf1662ded3abd9e,
     type: 2}
   m_PrefabInternal: {fileID: 1175546495}
---- !u!114 &1218661491
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1218661489}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a28f2b528fb34fc42a46c336f36be66a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  environmentLayer:
-    serializedVersion: 2
-    m_Bits: 16384
-  opaqueMat: {fileID: 2100000, guid: ca80be68b2f27f240bffdf0cd63f386e, type: 2}
 --- !u!1 &1226796458
 GameObject:
   m_ObjectHideFlags: 0
@@ -6282,7 +6231,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2ac3ce0e3554e574aab810a81a6624d0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  shapes:
+  hallways:
   - {fileID: 1386358454529218, guid: 029bc5160ba414241a38d62ee2144cd2, type: 2}
   - {fileID: 1670913289947070, guid: 038fb1ea4b88eef4691c93883d4c4a4a, type: 2}
   - {fileID: 1357546320224912, guid: 1148eda8ed30ad341b1c429f5d44fbd4, type: 2}
@@ -6294,6 +6243,18 @@ MonoBehaviour:
   - {fileID: 1692133006279458, guid: 4a111e5b4fd3b704ca555e9a70a9b7d5, type: 2}
   - {fileID: 1157695022901882, guid: 64b8d7fa833e20a4995120e5a8663533, type: 2}
   - {fileID: 1540159718382474, guid: 150e363822ff33d4a85eabd609cc46a2, type: 2}
+  rooms:
+  - {fileID: 1386358454529218, guid: 029bc5160ba414241a38d62ee2144cd2, type: 2}
+  - {fileID: 1670913289947070, guid: 038fb1ea4b88eef4691c93883d4c4a4a, type: 2}
+  - {fileID: 1747648468143178, guid: f62a360a22bee5841971f810cafb534c, type: 2}
+  - {fileID: 1765843641628424, guid: 2fd0d88288c5d994aabbcd1779e4a630, type: 2}
+  - {fileID: 1467893785126864, guid: b45d5d6caf19a7048a669e02cc01cad7, type: 2}
+  - {fileID: 1004669107209730, guid: 92e86042ce6b88d46811506e62b48860, type: 2}
+  - {fileID: 1140329739412930, guid: 0937cdb574692be4a8b9053a1586a5e4, type: 2}
+  - {fileID: 1569083443400652, guid: a2900e2f28eaf1d4da33e1844cbe5a14, type: 2}
+  - {fileID: 1014802427960134, guid: a9dfbe8816f8079479250574522e2691, type: 2}
+  - {fileID: 1511338865630624, guid: 5f0d73a4331d34142bd107577601ec12, type: 2}
+  - {fileID: 1276278005930186, guid: dd49332d12d69514a9cdbf482e902212, type: 2}
   deadEnd: {fileID: 1240430098749610, guid: c58b821fccb03884083c0b03b10d0483, type: 2}
   minimumMazePercentage: 0.8
   roomSize: 37.5

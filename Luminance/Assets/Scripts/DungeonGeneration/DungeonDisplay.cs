@@ -3,7 +3,8 @@ using System.Collections;
 using UnityEngine.AI;
 
 public class DungeonDisplay : MonoBehaviour {
-	public GameObject[] shapes;
+	public GameObject[] hallways;
+    public GameObject[] rooms;
     public GameObject deadEnd;
 	private MapGenerator mapGenerator;
 	public float minimumMazePercentage = 0.8f;
@@ -44,7 +45,10 @@ public class DungeonDisplay : MonoBehaviour {
 					continue;
 				}
 
-				Instantiate (shapes [charPos], new Vector3 (r * roomSize, 0, c * roomSize), shapes[charPos].transform.rotation);
+                if ((r + c) % 2 == 0)
+                    Instantiate(rooms[charPos], new Vector3(r * roomSize, 0, c * roomSize), rooms[charPos].transform.rotation);
+                else
+                    Instantiate(hallways[charPos], new Vector3 (r * roomSize, 0, c * roomSize), hallways[charPos].transform.rotation);
 			}
 		}
 
