@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: ea1280baf4844734a91221ac68ef3fc2
+timeCreated: 1503821888
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Future TimeSplitters
+  fontNames:
+  - Future TimeSplitters
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
