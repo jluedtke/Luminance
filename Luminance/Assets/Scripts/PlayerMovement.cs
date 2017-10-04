@@ -16,6 +16,7 @@ public class PlayerMovement : MonoBehaviour {
     {
         mainCamera = FindObjectOfType<Camera>();
         nva = GetComponent<NavMeshAgent>();
+        Physics.IgnoreLayerCollision(8, 15);
     }
 
     // Update is called once per frame

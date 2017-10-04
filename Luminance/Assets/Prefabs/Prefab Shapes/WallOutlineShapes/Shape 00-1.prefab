@@ -146,7 +146,7 @@ GameObject:
   - component: {fileID: 23725555445086994}
   - component: {fileID: 95161670585341070}
   - component: {fileID: 114761049478933720}
-  m_Layer: 0
+  m_Layer: 15
   m_Name: Torch
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -246,7 +246,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4403150863750568}
   - component: {fileID: 108584862950048100}
-  m_Layer: 0
+  m_Layer: 15
   m_Name: Point light
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -299,7 +299,7 @@ GameObject:
   - component: {fileID: 4681668582097096}
   - component: {fileID: 198684449804664882}
   - component: {fileID: 199142118107416188}
-  m_Layer: 0
+  m_Layer: 15
   m_Name: Flame
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -318,7 +318,7 @@ GameObject:
   - component: {fileID: 23583295184106018}
   - component: {fileID: 95412152291084600}
   - component: {fileID: 114181050603806964}
-  m_Layer: 0
+  m_Layer: 15
   m_Name: Torch (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -335,7 +335,7 @@ GameObject:
   - component: {fileID: 4433718136277838}
   - component: {fileID: 198579555599311640}
   - component: {fileID: 199913299802217612}
-  m_Layer: 0
+  m_Layer: 15
   m_Name: Flame
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -402,7 +402,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4681622853697502}
   - component: {fileID: 108326571221099628}
-  m_Layer: 0
+  m_Layer: 15
   m_Name: Point light
   m_TagString: Untagged
   m_Icon: {fileID: 0}
