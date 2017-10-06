@@ -11,12 +11,15 @@ public class PlayerMovement : MonoBehaviour {
     private Vector3 moveVelocity;
     private Camera mainCamera;
 
+    public LayerMask player;
+    public LayerMask torches;
+
 
     private void Start()
     {
         mainCamera = FindObjectOfType<Camera>();
         nva = GetComponent<NavMeshAgent>();
-        Physics.IgnoreLayerCollision(8, 15);
+        //Physics.IgnoreLayerCollision(player, torches);
     }
 
     // Update is called once per frame

@@ -38,12 +38,12 @@ GameObject:
   m_Component:
   - component: {fileID: 4642673747844808}
   - component: {fileID: 108563058196811994}
-  m_Layer: 0
+  m_Layer: 15
   m_Name: Point light
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &1135656291459942
 GameObject:
@@ -91,12 +91,12 @@ GameObject:
   - component: {fileID: 4093461828725782}
   - component: {fileID: 198206662277336866}
   - component: {fileID: 199070686906314832}
-  m_Layer: 0
+  m_Layer: 15
   m_Name: Flame
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &1208984123703734
 GameObject:
@@ -317,12 +317,12 @@ GameObject:
   - component: {fileID: 23929641678953072}
   - component: {fileID: 95704969421105750}
   - component: {fileID: 114983278612855910}
-  m_Layer: 0
+  m_Layer: 15
   m_Name: Torch
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &1779885761890096
 GameObject:
@@ -674,7 +674,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1760460742878838}
   m_LocalRotation: {x: 0.5955514, y: -0.5955514, z: 0.38120678, w: -0.38120678}
-  m_LocalPosition: {x: 4.01, y: -0.16100001, z: -0.84}
+  m_LocalPosition: {x: 4.01, y: 0, z: -0.84}
   m_LocalScale: {x: 2, y: 2, z: 2}
   m_Children:
   - {fileID: 4642673747844808}

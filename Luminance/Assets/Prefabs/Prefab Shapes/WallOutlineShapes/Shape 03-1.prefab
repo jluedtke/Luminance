@@ -74,12 +74,12 @@ GameObject:
   - component: {fileID: 23501141449717224}
   - component: {fileID: 95356175247247826}
   - component: {fileID: 114614230917940324}
-  m_Layer: 0
+  m_Layer: 15
   m_Name: Torch (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &1051227095229974
 GameObject:
@@ -90,12 +90,12 @@ GameObject:
   m_Component:
   - component: {fileID: 4327169833438028}
   - component: {fileID: 108282813802876022}
-  m_Layer: 0
+  m_Layer: 15
   m_Name: Point light
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &1102379661707712
 GameObject:
@@ -160,12 +160,12 @@ GameObject:
   - component: {fileID: 23229621384711182}
   - component: {fileID: 95153753886849600}
   - component: {fileID: 114952817493290422}
-  m_Layer: 0
+  m_Layer: 15
   m_Name: Torch (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &1176165260433152
 GameObject:
@@ -266,12 +266,12 @@ GameObject:
   m_Component:
   - component: {fileID: 4121304290107786}
   - component: {fileID: 108424085940656608}
-  m_Layer: 0
+  m_Layer: 15
   m_Name: Point light
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &1708792575694724
 GameObject:
@@ -316,12 +316,12 @@ GameObject:
   - component: {fileID: 4057480804749116}
   - component: {fileID: 198905054818731792}
   - component: {fileID: 199782025735873092}
-  m_Layer: 0
+  m_Layer: 15
   m_Name: Flame
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &1844200455174686
 GameObject:
@@ -351,12 +351,12 @@ GameObject:
   - component: {fileID: 4747176007553636}
   - component: {fileID: 198483993598038682}
   - component: {fileID: 199967002318594376}
-  m_Layer: 0
+  m_Layer: 15
   m_Name: Flame
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &1860472128546112
 GameObject:

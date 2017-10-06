@@ -8,8 +8,12 @@ public class DungeonDisplay : MonoBehaviour {
     public GameObject deadEnd;
 	private MapGenerator mapGenerator;
 	public float minimumMazePercentage = 0.8f;
+    private bool[,] visitedCells;
 
     public float roomSize = 5f;
+
+    [Header("AfterMapModels")]
+    public GameObject endPortal;
 
 
     // Use this for initialization
@@ -17,16 +21,16 @@ public class DungeonDisplay : MonoBehaviour {
 		mapGenerator = GetComponent<MapGenerator> ();
 
 		int visitedCellCount = 0;
-		bool[,] visitedCells = new bool[mapGenerator.mapRows, mapGenerator.mapColumns];
+		visitedCells = new bool[mapGenerator.mapRows, mapGenerator.mapColumns];
 
 		int minimumMazeCells = Mathf.FloorToInt((mapGenerator.mapRows - 2) * (mapGenerator.mapColumns - 2) * minimumMazePercentage);
 
 		while (visitedCellCount < minimumMazeCells) {
-			Debug.Log ("Current dungeon size = " + visitedCellCount + " which is less than the required " + minimumMazeCells + ". Retrying");
+			//Debug.Log ("Current dungeon size = " + visitedCellCount + " which is less than the required " + minimumMazeCells + ". Retrying");
 			mapGenerator.InitializeMap ();
 			visitedCells = mapGenerator.TraverseMap ();
 			visitedCellCount = GetVisitedCellsCount (visitedCells);
-			Debug.Log ("visited cell count = " + visitedCellCount);
+			//Debug.Log ("visited cell count = " + visitedCellCount);
 		}
 
 		mapGenerator.DisplayMap ();
@@ -52,6 +56,10 @@ public class DungeonDisplay : MonoBehaviour {
 			}
 		}
 
+        //Object Spawning
+        SpawnEndPortal(mapGenerator.mapRows-2, mapGenerator.mapColumns-2);
+        SpawnCrystals();
+
 
         //NavMesh Stuff
         gameObject.GetComponent<NavMeshSurface>().BuildNavMesh();
@@ -71,6 +79,37 @@ public class DungeonDisplay : MonoBehaviour {
 
 		return visitedCellsCount;
 	}
+
+    // Object Spawning //
+
+    private void SpawnCrystals()
+    {
+        GameObject[] crystalWaypoints = GameObject.FindGameObjectsWithTag("CrystalWaypoint");
+    }
+
+    private void SpawnEndPortal(int r, int c)
+    {
+        //Grab character location in case of dead ends
+        string ch = mapGenerator.map[r, c].ToString();
+
+        //If it's not a visited cell, randomly move up or left
+        if (!visitedCells[r, c] || ch == "O")
+        {
+            if (Random.value < 0.5f)
+            {
+                SpawnEndPortal(r - 1, c);
+                return;
+            }
+            else
+            {
+                SpawnEndPortal(r, c - 1);
+                return;
+            }
+        }
+        //Move existing end portal to middle of room
+        endPortal.transform.position = new Vector3(r * roomSize, 0.1f, c * roomSize);
+
+    }
 
     private void OnDrawGizmos()
     {

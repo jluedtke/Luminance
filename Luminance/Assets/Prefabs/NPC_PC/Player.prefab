@@ -273,8 +273,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1952132703176656}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 35.2, y: 0, z: 42.1}
+  m_LocalRotation: {x: 0, y: 0.034568075, z: 0, w: 0.9994024}
+  m_LocalPosition: {x: 48.67, y: 0.16666663, z: 24.15}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4658464042795064}
@@ -708,6 +708,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 10
+  player:
+    serializedVersion: 2
+    m_Bits: 256
+  torches:
+    serializedVersion: 2
+    m_Bits: 32768
 --- !u!114 &114286270978252848
 MonoBehaviour:
   m_ObjectHideFlags: 1

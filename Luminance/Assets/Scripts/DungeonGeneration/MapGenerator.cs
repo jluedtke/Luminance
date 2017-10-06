@@ -30,7 +30,7 @@ public class MapGenerator : MonoBehaviour {
 			}
 			output += "\n";
 		}
-		Debug.Log (output);
+		//Debug.Log (output);
 	}
 
 	public void InitializeMap() {
@@ -57,7 +57,7 @@ public class MapGenerator : MonoBehaviour {
 
 		int mapSeed = System.DateTime.Now.Millisecond; 
 		Random.seed = mapSeed;
-		Debug.Log ("Current seed = " + mapSeed);
+		//Debug.Log ("Current seed = " + mapSeed);
 
 		// map [1, 1] = '@';
 		// map [1, 2] = '@';
