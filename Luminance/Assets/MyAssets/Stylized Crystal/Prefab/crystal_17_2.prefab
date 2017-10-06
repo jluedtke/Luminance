@@ -25,6 +25,7 @@ GameObject:
   - component: {fileID: 114677061906936472}
   - component: {fileID: 114452656469007286}
   - component: {fileID: 65708743310888416}
+  - component: {fileID: 208001774767393158}
   m_Layer: 0
   m_Name: crystal_17_2
   m_TagString: Crystal
@@ -3346,3 +3347,18 @@ ParticleSystemRenderer:
   m_Mesh1: {fileID: 0}
   m_Mesh2: {fileID: 0}
   m_Mesh3: {fileID: 0}
+--- !u!208 &208001774767393158
+NavMeshObstacle:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000012006197310}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 0
+  m_Extents: {x: 0.026, y: 0.026, z: 0.026}
+  m_MoveThreshold: 0.1
+  m_Carve: 1
+  m_CarveOnlyStationary: 1
+  m_Center: {x: -0.006, y: 0.023000002, z: 0.014}
+  m_TimeToStationary: 0.5

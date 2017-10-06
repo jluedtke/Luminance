@@ -9,6 +9,9 @@ TagManager:
   - Crystal
   - Enemy
   - End
+  - CrystalWaypoint
+  - CWWaypoint
+  - MageWaypoint
   layers:
   - Default
   - TransparentFX

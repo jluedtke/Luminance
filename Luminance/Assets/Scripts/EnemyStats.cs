@@ -42,7 +42,7 @@ public class EnemyStats : MonoBehaviour {
         {
             if (gameObject.name.Contains("Lich") == false)
             {
-                Instantiate(deathAnim, transform.position, transform.rotation);
+                Instantiate(deathAnim, transform.position + (Vector3.up * 3), transform.rotation);
                 GetComponent<CreateLumens>().ObjectDied(minLumen, maxLumen);
                 Destroy(gameObject);
 
@@ -74,6 +74,6 @@ public class EnemyStats : MonoBehaviour {
             return;
 
         }
-        Instantiate(deathAnim, transform.position, transform.rotation);         
+        Instantiate(deathAnim, transform.position + (Vector3.up * 3), transform.rotation);         
     }
 }

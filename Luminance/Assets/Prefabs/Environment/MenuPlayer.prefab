@@ -119,6 +119,7 @@ GameObject:
   - component: {fileID: 4668564207275586}
   - component: {fileID: 114698583063116084}
   - component: {fileID: 54191162046600978}
+  - component: {fileID: 195922125640134112}
   m_Layer: 8
   m_Name: MenuPlayer
   m_TagString: Player
@@ -467,12 +468,39 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1932725012137380}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d15f2c757fa63ca4aa8d81f0b1a26011, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 10
+  player:
+    serializedVersion: 2
+    m_Bits: 0
+  torches:
+    serializedVersion: 2
+    m_Bits: 0
+--- !u!195 &195922125640134112
+NavMeshAgent:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1932725012137380}
+  m_Enabled: 1
+  m_AgentTypeID: 0
+  m_Radius: 2
+  m_Speed: 5
+  m_Acceleration: 20
+  avoidancePriority: 50
+  m_AngularSpeed: 1200
+  m_StoppingDistance: 2
+  m_AutoTraverseOffMeshLink: 1
+  m_AutoBraking: 1
+  m_AutoRepath: 1
+  m_Height: 10
+  m_BaseOffset: 0
+  m_WalkableMask: 4294967295
+  m_ObstacleAvoidanceType: 4
 --- !u!198 &198241306559149846
 ParticleSystem:
   m_ObjectHideFlags: 1

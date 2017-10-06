@@ -14,6 +14,14 @@ public class DungeonDisplay : MonoBehaviour {
 
     [Header("AfterMapModels")]
     public GameObject endPortal;
+    public GameObject crystal;
+    public GameObject corruptedWisp;
+    public GameObject mage;
+
+    public float minimumCrystalPercentage;
+    public float minimumCWPercentage;
+    public float minimumMagePercentage;
+
 
 
     // Use this for initialization
@@ -59,6 +67,7 @@ public class DungeonDisplay : MonoBehaviour {
         //Object Spawning
         SpawnEndPortal(mapGenerator.mapRows-2, mapGenerator.mapColumns-2);
         SpawnCrystals();
+        SpawnEnemies();
 
 
         //NavMesh Stuff
@@ -82,9 +91,39 @@ public class DungeonDisplay : MonoBehaviour {
 
     // Object Spawning //
 
+    private void SpawnEnemies()
+    {
+        //Grab arrays of all enemy waypoints
+        GameObject[] cwWaypoints = GameObject.FindGameObjectsWithTag("CWWaypoint");
+        GameObject[] mageWaypoints = GameObject.FindGameObjectsWithTag("MageWaypoint");
+
+        //Corrupted Wisp, default rate is 80%
+        for (int i = 0; i < cwWaypoints.Length; i++)
+        {
+            if (Random.value < minimumCWPercentage)
+                Instantiate(corruptedWisp, cwWaypoints[i].transform.position + ( Vector3.up * 3 ), Quaternion.identity);
+        }
+
+        //Mage, default rate is 100%
+        for (int i = 0; i < mageWaypoints.Length; i++)
+        {
+            if (Random.value < minimumMagePercentage)
+                Instantiate(mage, mageWaypoints[i].transform.position, Quaternion.identity);
+        }
+    }
+
     private void SpawnCrystals()
     {
+        //Collect all possible locations for crystals
         GameObject[] crystalWaypoints = GameObject.FindGameObjectsWithTag("CrystalWaypoint");
+
+        //Instantiate a crystal if it passes a range test. Roughly 80% at base.
+        for (int i = 0; i < crystalWaypoints.Length; i++)
+        {
+            //Instantiate at random rotation
+            if (Random.value < minimumCrystalPercentage)
+                Instantiate(crystal, crystalWaypoints[i].transform.position, Quaternion.Euler(0, Random.Range(90, 270), 0));
+        }
     }
 
     private void SpawnEndPortal(int r, int c)

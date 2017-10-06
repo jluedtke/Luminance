@@ -36,7 +36,7 @@ public class EnemyShoot : MonoBehaviour {
 
         distance = Vector3.Distance(target.transform.position, transform.position);
 
-        if (distance >25)
+        if (distance  >15)
             return;
 
 
