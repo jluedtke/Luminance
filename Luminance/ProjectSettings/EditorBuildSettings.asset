@@ -10,4 +10,7 @@ EditorBuildSettings:
     guid: b4a024d9725c05042999d0285daf5097
   - enabled: 1
     path: Assets/Level 01.unity
+    guid: 70bd3ec41f71fae4b8d746172bd407e5
+  - enabled: 1
+    path: Assets/Level RandomDungeon.unity
     guid: 00000000000000000000000000000000
